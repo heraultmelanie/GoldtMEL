@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>App Mobile</title>
+        <link rel="stylesheet" href="styles/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    </head>
+    <body>
+        <!-- <h1>HOMEPAGE</h1>
+        <button hidden id="sign-out">
+            Sign-out
+        </button>
+        <button hidden id="sign-in-google">
+            Sign-in with Google
+        </button>
+        <header>
+            <a href="#"><img src="#" alt="logo"></a>
+            <ul>
+                <li><a href="#" class="active">Inspirer</a></li>
+                <li><a href="#">Explorer</a></li>
+            </ul>
+        </header> -->
+        <!-- DEBUT de la partie "faire explorer" -->
+        <div class="discover" style="display:none;">
+            <!-- <div class="container-add-article" >
+                <p>Ajouter</p>
+                <form class="add-article" >
+                    <label>Le nom de votre perle</label>
+                    <input type="text" name="title" value="" class="title-input-add">
+                    <label>Décrivez votre perle</label>
+                    <textarea name="describe" rows="8" cols="20">
+                    </textarea>
+                    <label>L'adresse de votre perle</label>
+                    <input type="text" name="adress" value="">
+                    <input type="image" src="#" value="Ajouter une image" class="button-image"/>
+                    <button type="button" name="button" class="button-add-article">OK</button>
+                </form>
+            </div> -->
+            <div class="container-all-articles clearfix">
+                <h2>Révélez vos idées ... de la ville de <span class="choose-city">Tokyo</span></h2>
+                <p class="info-goldn">J'habite <span class="choose-city">Tokyo</span>, et je veux faire profiter aux visiteurs le charme de ma ville. Ici, comme d'autres habitants de <span class="choose-city">Tokyo</span>, j’ajoute mes coups de coeur et mes idées découverte pour les partager aux visiteurs curieux !</p>
+                <div id="wrap-articles">
+                    <div class="wrap-articles clearfix">
+                        <div class="article-detail">
+                            <h3>Scarmouche</h3>
+                            <p class="info-city">Il a beau être le 3e meilleure glacier de Paris, être situé à deux pas de la place des abbesses et avoir une…</p>
+                            <!-- <div class="container-author">
+                                <img src="#" alt="">
+                                <p class="name-author">Auteur</p>
+                            </div> -->
+                            <div class="container-address">
+                                <p class="street-address">22 Rue la Vieuville, 75018 Paris</p>
+                            </div>
+                        </div>
+                        <div class="article-detail">
+                            <div class="img-article-detail">
+                                <img src="images/scaramouche.jpg" alt="">
+                            </div>
+                            <div class="container-advice">
+                                <div class="approve">
+                                    <p>J'approuve</p>
+                                </div>
+                                <div class="dislike">
+                                    <img src="images/dislike.svg" alt="dislike image">
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="wrap-articles clearfix" id="wrap-articles">
+                        <div class="article-detail">
+                            <h3>Scarmouche</h3>
+                            <p class="info-city">Il a beau être le 3e meilleure glacier de Paris, être situé à deux pas de la place des abbesses et avoir une…</p>
+                            <!-- <div class="container-author">
+                                <img src="#" alt="">
+                                <p class="name-author">Auteur</p>
+                            </div> -->
+                            <div class="container-address">
+                                <p class="street-address">22 Rue la Vieuville, 75018 Paris</p>
+                            </div>
+                        </div>
+                        <div class="article-detail">
+                            <div class="img-article-detail">
+                                <img src="images/scaramouche.jpg" alt="">
+                            </div>
+                            <div class="container-advice">
+                                <div class="approve">
+                                    <p>J'approuve</p>
+                                </div>
+                                <div class="dislike">
+                                    <img src="images/dislike.svg" alt="dislike image">
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN de la partie "faire explorer" -->
+        <!-- rmq: Dans le header, la classe active switchera sur le li "visiter" -->
+        <!-- DEBUT de la partie "visiter" -->
+        <div class="explore" >
+            <div class="container-all-articles clearfix">
+                <h2>Vous aussi, profitez des perles de la ville de Paris</h2>
+                <div class="wrapper-info-explorer">
+                    <p class="info-goldn">Je visite</p> 
+                    <input type="text" name="city-name" class="city-name">, <br> 
+                    <p class="info-goldn">je veux découvrir ses charmes !</p>
+                </div>
+                <div id="wrap-articles">
+                    <div class="wrap-articles clearfix">
+                        <div class="article-detail">
+                            <h3>Deyroll</h3>
+                            <p class="info-city">Cette maison bicentenaire est aujourd'hui le dernier cabinet de curiosités ouvert au public, qui offre la….</p>
+                            <div class="container-address">
+                                <p class="street-address">46 Rue du Bac, 75007 Paris</p>
+                            </div>
+                        </div>
+                        <div class="article-detail">
+                            <div class="img-article-detail">
+                                <img src="images/scaramouche.jpg" alt="">
+                            </div>
+                            <div class="container-advice">
+                                <div class="approve">
+                                    <p>J'approuve</p>
+                                </div>
+                                <div class="dislike">
+                                    <img src="images/dislike.svg" alt="dislike image">
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN de la partie "visiter" -->
+    </body>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBvKD7Uz4ylHuS8ON3-2YErYi5nhv6m0mM",
+        authDomain: "mobileapp-7c55e.firebaseapp.com",
+        databaseURL: "https://mobileapp-7c55e.firebaseio.com",
+        projectId: "mobileapp-7c55e",
+        storageBucket: "mobileapp-7c55e.appspot.com",
+        messagingSenderId: "269241580294"
+      };
+      firebase.initializeApp(config);
+    </script>
+     <script type="text/javascript" src="js/div.js"></script>
+</html>
